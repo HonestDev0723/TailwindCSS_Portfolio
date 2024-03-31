@@ -41,6 +41,9 @@ function WhoIM() {
             <span className="flex items-center justify-center gap-3 font-sans text-gray-200">
               <FaHandPointRight /> Travelling
             </span>
+            <span className="flex items-center justify-center gap-3 font-sans text-gray-200">
+              <FaHandPointRight /> socializing with friends
+            </span>            
           </span>
         </div>
       </div>
