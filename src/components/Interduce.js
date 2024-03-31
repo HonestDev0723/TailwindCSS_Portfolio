@@ -10,11 +10,12 @@ function Interduce() {
         className="h-full w-full object-cover opacity-10 absolute bottom-0"
       />
       <div className="w-full lg:w-1/2 h-1/2 lg:h-full flex items-center justify-center flex-col my-10 lg:gap-10">
-        <h1 className="flex text-white text-2xl lg:text-4xl gap-2 my-10">
-          LET ME <p className="text-[#ad50eb]">INTRODUCE</p> MYSELF <p className="text-[#ad50eb]">BRIEFLY</p>
+        <h1 className="flex text-white text-2xl lg:text-4xl gap-3 my-10">
+          LET ME <p className="text-[#ad50eb]">INTRODUCE</p> 
+          MYSELF <p className="text-[#ad50eb]">BRIEFLY</p>
         </h1>
-        <div className="flex items-center m-auto justify-center w-11/12 lg:w-3/4 lg:mr-10">
-          <span className="flex flex-col gap-3 text-white items-start  text-base justify-center font-semibold lg:text-lg">
+        <div className="flex items-center m-auto justify-center w-11/12 lg:w-3/4 lg:mr-10 text-justify">
+          <span className="flex flex-col gap-3 text-white items-start text-base justify-center font-semibold lg:text-lg">
             <p>
               As a seasoned 
               <span className="text-[#ad50eb]"> Blockchain engineer </span> and 
