@@ -1,6 +1,14 @@
 import React from "react";
 import { FaHandPointRight } from "react-icons/fa";
 function WhoIM() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  };
+  
   return (
     <div className="flex flex-wrap items-center justify-center flex-col lg:flex-row relative">
       <img
@@ -42,7 +50,7 @@ function WhoIM() {
               <FaHandPointRight /> Travelling
             </span>
             <span className="flex items-center justify-center gap-3 font-sans text-gray-200">
-              <FaHandPointRight /> socializing with friends
+              <FaHandPointRight /> Socializing with friends
             </span>            
           </span>
         </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { FaAward } from "react-icons/fa";
+import { FaUniversity, FaAward, FaCalendar } from "react-icons/fa";
 function Education() {
   return (
     <div className="flex flex-wrap items-center justify-center flex-col lg:flex-row relative">
@@ -14,15 +14,15 @@ function Education() {
         </h1>
         <div className="flex items-center m-auto justify-center w-11/12 lg:w-4/5">
           <span className="flex flex-col gap-3 text-white items-start  text-base justify-center font-semibold lg:text-lg">
-            <p className="text-center mt-3 mx-auto md:mx-0">
-            National Aviation University
+            <p className="flex items-center gap-3 text-center mt-3 mx-auto md:mx-0">
+              <FaUniversity />National Aviation University
             </p>
             <span className="flex items-center justify-center gap-3 font-sans text-gray-200">
-              <FaAward className="text-[#ad50eb]"/>Bachelor of Engineering (BEng)
+              <FaAward />Bachelor of Engineering (BEng)
             </span>
-            <p className="text-center mt-3 mx-auto md:mx-0">
-            2018-2021
-            </p>
+            <span className="flex items-center justify-center gap-3 font-sans text-gray-200">
+              <FaCalendar />2018-2021
+            </span>
           </span>
         </div>
       </div>

@@ -5,7 +5,7 @@ import {
   AiOutlineFundProjectionScreen,
   AiFillStar,
 } from "react-icons/ai";
-import { FiUser, FiFileText } from "react-icons/fi";
+import { FiUser, FiFileText, FiTool, FiServer } from "react-icons/fi";
 import { DiGitBranch } from "react-icons/di";
 import { RiMenu3Fill } from "react-icons/ri";
 import { MdClose } from "react-icons/md";
@@ -73,8 +73,17 @@ function Header() {
               to={"/skill"}
               className="flex gap-1 items-center justify-center cursor-pointer text-base lg:text-lg font-semibold relative before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[4px] before:bg-purple-500 group-hover:before:w-full"
             >
-              <FiUser fontSize={20} />
+              <FiTool fontSize={20} />
               <span className="">Skill</span>
+            </Link>
+          </li>
+          <li className="relative group">
+            <Link
+              to={"/services"}
+              className="flex gap-1 items-center justify-center cursor-pointer text-base lg:text-lg font-semibold relative before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[4px] before:bg-purple-500 group-hover:before:w-full"
+            >
+              <FiServer fontSize={20} />
+              <span className="">Services</span>
             </Link>
           </li>
           <li className="relative group">

@@ -51,6 +51,16 @@ function MobileNav({ showNav, setShowNav }) {
           </li>
           <li className="relative group">
             <Link
+              to={"/services"}
+              className="flex gap-1 items-center justify-center cursor-pointer text-base font-bold relative"
+              onClick={() => setShowNav(false)}
+            >
+              <AiOutlineFundProjectionScreen fontSize={20} />
+              <span className="">Services</span>
+            </Link>
+          </li>
+          <li className="relative group">
+            <Link
               to={"/projects"}
               className="flex gap-1 items-center justify-center cursor-pointer text-base font-bold relative"
               onClick={() => setShowNav(false)}

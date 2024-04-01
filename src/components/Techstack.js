@@ -1,5 +1,5 @@
 import React from "react";
-import { AiFillHtml5, AiFillGithub } from "react-icons/ai";
+import { AiFillHtml5 } from "react-icons/ai";
 import {
   FaCss3Alt,
   FaReact,
@@ -18,73 +18,95 @@ import {
   SiPwa,
   SiExpress,
   SiMongodb,
+  SiWeb3Dotjs,
+  SiRust,
+  SiSolidity,
+  SiTypescript,
+  SiDjango,
+  SiPrisma,
+  SiPostgresql,
+  SiPython
 } from "react-icons/si";
-import { BsGit } from "react-icons/bs";
 import { TbBrandNextjs } from "react-icons/tb";
-import { SiPrisma } from "react-icons/si";
 
-const data = [
+const data = [  
   {
-    icon: <AiFillHtml5 fontSize={70} color="#fff" />,
+    icon: <SiWeb3Dotjs fontSize={70} color="#fff" title="Web 3.0"/>,
   },
   {
-    icon: <FaCss3Alt fontSize={70} color="#fff" />,
+    icon: <SiRust fontSize={70} color="#fff" title="Rust"/>,
   },
   {
-    icon: <BiLogoJavascript fontSize={70} color="#fff" />,
+    icon: <SiSolidity fontSize={70} color="#fff" title="Solidity"/>,
   },
   {
-    icon: <SiFirebase fontSize={70} color="#fff" />,
+    icon: <SiTypescript fontSize={70} color="#fff" title="Typescript"/>,
+  }, 
+  {
+    icon: <SiDjango fontSize={70} color="#fff" title="Django"/>,
+  },  
+  {
+    icon: <AiFillHtml5 fontSize={70} color="#fff" title="HTML 5"/>,
   },
   {
-    icon: <BsGit fontSize={70} color="#fff" />,
+    icon: <FaCss3Alt fontSize={70} color="#fff" title="CSS3"/>,
   },
   {
-    icon: <AiFillGithub fontSize={70} color="#fff" />,
+    icon: <BiLogoJavascript fontSize={70} color="#fff" title="Javascript"/>,
   },
   {
-    icon: <FaReact fontSize={70} color="#fff" />,
+    icon: <SiFirebase fontSize={70} color="#fff" title="Firebase"/>,
   },
   {
-    icon: <SiRedux fontSize={70} color="#fff" />,
+    icon: <FaReact fontSize={70} color="#fff" title="React"/>,
   },
   {
-    icon: <SiTailwindcss fontSize={70} color="#fff" />,
+    icon: <SiRedux fontSize={70} color="#fff" title="Redux"/>,
   },
   {
-    icon: <FaSass fontSize={70} color="#fff" />,
+    icon: <SiTailwindcss fontSize={70} color="#fff" title="Tailwindcss"/>,
   },
   {
-    icon: <FaBootstrap fontSize={70} color="#fff" />,
+    icon: <FaSass fontSize={70} color="#fff" title="Sass"/>,
   },
   {
-    icon: <SiGreensock fontSize={70} color="#fff" />,
+    icon: <FaBootstrap fontSize={70} color="#fff" title="Bootstrap"/>,
   },
   {
-    icon: <SiJquery fontSize={70} color="#fff" />,
+    icon: <SiGreensock fontSize={70} color="#fff" title="Greensock"/>,
   },
   {
-    icon: <FaWordpress fontSize={70} color="#fff" />,
+    icon: <SiJquery fontSize={70} color="#fff" title="Jquery"/>,
   },
   {
-    icon: <SiPwa fontSize={70} color="#fff" />,
+    icon: <FaWordpress fontSize={70} color="#fff" title="Wordpress"/>,
   },
   {
-    icon: <FaNodeJs fontSize={70} color="#fff" />,
+    icon: <SiPwa fontSize={70} color="#fff" title="PWA"/>,
   },
   {
-    icon: <SiExpress fontSize={70} color="#fff" />,
+    icon: <FaNodeJs fontSize={70} color="#fff" title="NodeJs"/>,
   },
   {
-    icon: <SiMongodb fontSize={70} color="#fff" />,
+    icon: <SiExpress fontSize={70} color="#fff" title="Express"/>,
   },
   {
-    icon: <TbBrandNextjs fontSize={70} color="#fff" />,
+    icon: <SiMongodb fontSize={70} color="#fff" title="Mongodb"/>,
   },
   {
-    icon: <SiPrisma fontSize={70} color="#fff" />,
+    icon: <TbBrandNextjs fontSize={70} color="#fff" title="BrandNextjs"/>,
+  },
+  {
+    icon: <SiPrisma fontSize={70} color="#fff" title="Prisma"/>,
+  },  
+  {
+    icon: <SiPostgresql fontSize={70} color="#fff" title="Postgresql"/>,
+  },
+  {
+    icon: <SiPython fontSize={70} color="#fff" title="Python"/>,
   },
 ];
+
 function Techstack() {
   return (
     <div className="relative w-11/12 lg:w-4/5 mx-auto flex items-center justify-center gap-3 flex-wrap my-5 lg:my-10">

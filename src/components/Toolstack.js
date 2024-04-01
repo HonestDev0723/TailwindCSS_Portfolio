@@ -1,5 +1,12 @@
 import React from "react";
-import { BsWindows } from "react-icons/bs";
+import { BsWindows, BsGit } from "react-icons/bs";
+import { AiFillGithub } from "react-icons/ai";
+import { 
+  BiLogoFigma, 
+  BiLogoDocker, 
+  BiLogoCodepen
+ } from "react-icons/bi";
+ 
 import {
   SiVisualstudiocode,
   SiPostman,
@@ -9,20 +16,35 @@ import {
 function Toolstack() {
   const data = [
     {
-      icon: <BsWindows fontSize={70} color="#fff" />,
+      icon: <BsWindows fontSize={70} color="#fff" title="Windows" />,
     },
     {
-      icon: <SiVisualstudiocode fontSize={70} color="#fff" />,
+      icon: <SiVisualstudiocode fontSize={70} color="#fff" title="Visualstudiocode" />,
     },
     {
-      icon: <SiPostman fontSize={70} color="#fff" />,
+      icon: <SiPostman fontSize={70} color="#fff" title="Postman" />,
     },
     {
-      icon: <SiVercel fontSize={70} color="#fff" />,
+      icon: <SiVercel fontSize={70} color="#fff" title="Vercel" />,
     },
     {
-      icon: <SiNetlify fontSize={70} color="#fff" />,
+      icon: <SiNetlify fontSize={70} color="#fff" title="Netlify" />,
+    },    
+    {
+      icon: <BsGit fontSize={70} color="#fff" title="Git" />,
     },
+    {
+      icon: <AiFillGithub fontSize={70} color="#fff" title="Github" />,
+    },
+    {
+      icon: <BiLogoFigma fontSize={70} color="#fff" title="Figma" />,
+    },    
+    {
+      icon: <BiLogoCodepen fontSize={70} color="#fff" title="Codepen" />,
+    }, 
+    {
+      icon: <BiLogoDocker fontSize={70} color="#fff" title="Docker" />,
+    }, 
   ];
   return (
     <div className="relative w-11/12 lg:w-4/5 mx-auto flex items-center justify-center gap-3 flex-wrap my-5">
