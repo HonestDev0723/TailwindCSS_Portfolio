@@ -111,7 +111,6 @@ function Header() {
           rel="noreferrer"
           className="flex mx-10 gap-2 text-lg bg-purple-900 px-5 py-[5px] border border-purple-700 rounded-sm hover:bg-purple-800 transition-all duration-200 hover:-translate-y-[2px]"
         >
-          <DiGitBranch fontSize={20} />
           <AiFillStar fontSize={20} />
         </a>
       </div>

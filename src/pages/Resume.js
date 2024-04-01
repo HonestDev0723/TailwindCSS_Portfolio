@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-import { BiDownload } from "react-icons/bi";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 function Resume() {
   const [width, setWidth] = useState(1200);
@@ -19,7 +18,7 @@ function Resume() {
       />
       <div className="py-[50px] justify-center flex items-center overflow-hidden z-20">
         <Document
-          file="../../Ritesh.pdf"
+          file="../../oleksii.pdf"
           className="flex justify-center shadow-xl"
         >
           <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
