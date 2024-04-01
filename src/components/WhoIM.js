@@ -1,14 +1,18 @@
 import React from "react";
+import Slider from "react-slick";
+//import 'tailwindcss/tailwind.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { FaHandPointRight } from "react-icons/fa";
 function WhoIM() {
   const settings = {
     dots: true,
-    infinite: true,
-    speed: 500,
+    centerMode: true,
+    infinite: false,
     slidesToShow: 3,
     slidesToScroll: 3
   };
-  
+
   return (
     <div className="flex flex-wrap items-center justify-center flex-col lg:flex-row relative">
       <img
@@ -56,11 +60,38 @@ function WhoIM() {
         </div>
       </div>
       <div className="w-full lg:w-1/2 h-full flex items-center justify-center z-20">
-        <img
-          src="about.png"
-          alt=""
-          className="lg:p-10 object-cover lg:w-3/4 w-full"
-        />
+        <div className="slick-carousel">
+          <Slider {...settings}>
+            <div>
+            <img
+                src="about.png"
+                alt=""
+                className="object-cover lg:w-full w-full "
+              />
+            </div>
+            <div>
+            <img
+                src="about.png"
+                alt=""
+                className="w-3/4"
+              />
+            </div>
+            <div>
+            <img
+                src="about.png"
+                alt=""
+                className="w-3/4"
+              />
+            </div>
+            <div>
+            <img
+                src="about.png"
+                alt=""
+                className="w-3/4"
+              />
+            </div>
+          </Slider>
+        </div>
       </div>
     </div>
   );

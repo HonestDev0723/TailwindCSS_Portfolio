@@ -17,14 +17,6 @@ function Resume() {
         alt=""
         className="h-full w-full object-cover opacity-10 absolute bottom-0"
       />
-      <a
-        href={"../../Ritesh.pdf"}
-        target="_blank"
-        rel="noreferrer"
-        className="flex items-center z-20 justify-center gap-3 px-6 py-2 rounded  shadow-md text-white bg-purple-600 hover:bg-purple-700 transition duration-300 ease-in-out my-3"
-      >
-        <BiDownload fontSize={20} /> Download CV
-      </a>
       <div className="py-[50px] justify-center flex items-center overflow-hidden z-20">
         <Document
           file="../../Ritesh.pdf"
@@ -33,14 +25,6 @@ function Resume() {
           <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
         </Document>
       </div>
-      <a
-        href={"../../Ritesh.pdf"}
-        target="_blank"
-        rel="noreferrer"
-        className="flex items-center z-20 justify-center gap-3 px-6 py-2 rounded  shadow-md text-white bg-purple-600 hover:bg-purple-700 transition duration-300 ease-in-out my-3"
-      >
-        <BiDownload fontSize={20} /> Download CV
-      </a>
     </div>
   );
 }

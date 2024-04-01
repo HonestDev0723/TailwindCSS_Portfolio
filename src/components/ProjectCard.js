@@ -1,8 +1,6 @@
 import React from "react";
-import { BsGithub } from "react-icons/bs";
-import { BiLinkExternal } from "react-icons/bi";
 import Tilt from "react-parallax-tilt";
-function ProjectCard({ name, about, image, demo, code, note }) {
+function ProjectCard({ name, about, image, note }) {
   return (
     <section className="text-gray-200 body-font  rounded-lg">
       <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center">
@@ -33,20 +31,6 @@ function ProjectCard({ name, about, image, demo, code, note }) {
               </a>
             </p>
           )}
-          <div className="flex justify-center">
-            {demo && (
-              <a href={demo} target="_blank" rel="noreferrer">
-                <button className="inline-flex text-white bg-purple-700 border-0 py-2 px-5 focus:outline-none font-medium items-center justify-center gap-1 hover:bg-purple-500  rounded text-lg">
-                  Demo <BiLinkExternal />
-                </button>
-              </a>
-            )}
-            <a href={code} target="_blank" rel="noreferrer">
-              <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-5 focus:outline-none font-medium items-center justify-center gap-1 hover:bg-gray-200 rounded text-lg">
-                Code <BsGithub />
-              </button>
-            </a>
-          </div>
         </div>
       </div>
     </section>
