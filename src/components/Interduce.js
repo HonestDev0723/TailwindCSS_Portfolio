@@ -1,7 +1,27 @@
 import React from "react";
-import Tilt from "react-parallax-tilt";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+//import Tilt from "react-parallax-tilt";
 
 function Interduce() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true, 
+    autoplaySpeed: 2000
+  };
+
+  const imgList = [
+    {url : "./man1.png"},
+    {url : "./bitcoin3.png"},
+    {url : "./bitcoin4.png"},
+    {url : "./bitcoin5.png"}
+  ]
+
   return (
     <div className="flex flex-wrap items-center justify-center flex-col lg:flex-row relative overflow-hidden">
       <img
@@ -72,10 +92,24 @@ function Interduce() {
           </span>
         </div>
       </div>
-      <div className="w-full lg:w-1/2 h-full flex items-center justify-center p-10">
+      {/* <div className="w-full lg:w-1/2 h-full flex items-center justify-center p-10">
         <Tilt>
           <img src="man.png" alt="" className="object-cover" />
         </Tilt>
+      </div> */}
+      <div className="w-full lg:w-1/2 h-full flex items-center justify-center p-10">
+        <div className="w-full lg:w-3/4 h-full">
+          <Slider {...settings}>
+            {imgList.map(({ url }, id) => (
+              <div>
+                <img
+                src={url}
+                alt="No Image"
+                />
+              </div>
+            ))}
+          </Slider>
+        </div>
       </div>
     </div>
   );
