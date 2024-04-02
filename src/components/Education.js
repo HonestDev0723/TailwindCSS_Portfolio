@@ -28,9 +28,9 @@ function Education() {
       </div>
       <div className="w-full lg:w-1/2 h-full flex items-center justify-center z-20">
         <img
-          src="about.png"
-          alt=""
-          className="lg:p-10 object-cover lg:w-3/4 w-full"
+          src="bachelo.png"
+          alt="No Image"
+          className="lg:p-10 object-cover w-full lg:w-1/2 rounded-full"
         />
       </div>
     </div>

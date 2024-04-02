@@ -7,11 +7,22 @@ import { FaHandPointRight } from "react-icons/fa";
 function WhoIM() {
   const settings = {
     dots: true,
-    centerMode: true,
-    infinite: false,
-    slidesToShow: 3,
-    slidesToScroll: 3
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1
   };
+
+  const imgList = [
+    {url : "./token.jpg"},
+    {url : "./NFT.jpg"},
+    {url : "./betting.jpg"},
+    {url : "./uniswap.jpg"},
+    {url : "./DApp.jpg"},
+    {url : "./custom Blockchain.jpg"},
+    {url : "./FullStack.jpg"},
+    {url : "./about.png"},
+  ]
 
   return (
     <div className="flex flex-wrap items-center justify-center flex-col lg:flex-row relative">
@@ -59,37 +70,17 @@ function WhoIM() {
           </span>
         </div>
       </div>
-      <div className="w-full lg:w-1/2 h-full flex items-center justify-center z-20">
-        <div className="slick-carousel">
+      <div className="flex w-full lg:w-1/2 h-full items-center justify-center">
+        <div className="w-full lg:w-3/4 h-full">
           <Slider {...settings}>
-            <div>
-            <img
-                src="about.png"
-                alt=""
-                className="object-cover lg:w-full w-full "
-              />
-            </div>
-            <div>
-            <img
-                src="about.png"
-                alt=""
-                className="w-3/4"
-              />
-            </div>
-            <div>
-            <img
-                src="about.png"
-                alt=""
-                className="w-3/4"
-              />
-            </div>
-            <div>
-            <img
-                src="about.png"
-                alt=""
-                className="w-3/4"
-              />
-            </div>
+            {imgList.map(({ url }, id) => (
+              <div>
+                <img
+                src={url}
+                alt="No Image"
+                />
+              </div>
+            ))}
           </Slider>
         </div>
       </div>

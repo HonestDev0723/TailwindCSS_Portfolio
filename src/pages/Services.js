@@ -9,7 +9,7 @@ const servicesData = [
   {
     title: 'Token Creation',
     description:
-      'I specialized in token creating, minting, staking, vesting, launching on any chains such as solana or EVM. Such as ERC 20, ERC 404, ERC 721, Token 2022, SPL token(solana token), NFT and Meme coin',
+      'I specialized in token creating, minting, staking, vesting, launching on any chains such as solana or EVM. Such as ERC 20, ERC 404, ERC 721, Token 2022, SPL token(solana token), NFT and Meme coin. And I can develop trading bot such as sniper bot',
   },
   {
     title: 'Non-Fungible Token',

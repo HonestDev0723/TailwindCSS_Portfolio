@@ -21,7 +21,7 @@ function Project() {
           name={"Token Creating"}
           image={"/project/img2.png"}
           about={
-            "I have rich experiences in Token Creating, Minting, Staking, Vesting and Launching such as ERC20, ERC 404, ERC 721, SPL token(solana token), Token 2022, NFT and Meme Coin."
+            "I have rich experiences in Token Creating, Minting, Staking, Vesting and Launching such as ERC20, ERC 404, ERC 721, SPL token(solana token), Token 2022, NFT and Meme Coin. And I can develop trading bot such as sniper bot"
           }
         />
         <ProjectCard
