@@ -15,14 +15,10 @@ function WhoIM() {
   };
 
   const imgList = [
-    {url : "./token.jpg"},
-    {url : "./NFT.jpg"},
-    {url : "./betting.jpg"},
-    {url : "./uniswap.jpg"},
-    {url : "./DApp.jpg"},
-    {url : "./custom Blockchain.jpg"},
-    {url : "./FullStack.jpg"},
-    {url : "./about.png"},
+    {url : "./token.png"},
+    {url : "./NFT.png"},
+    {url : "./betting.png"},
+    {url : "./DApp.png"}
   ]
 
   return (

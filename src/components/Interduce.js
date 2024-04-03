@@ -16,10 +16,10 @@ function Interduce() {
   };
 
   const imgList = [
-    {url : "./man1.png"},
-    {url : "./bitcoin3.png"},
-    {url : "./bitcoin4.png"},
-    {url : "./bitcoin5.png"}
+    {url : "./DApp.png"},
+    {url : "./betting.png"},
+    {url : "./token.png"},
+    {url : "./NFT.png"}
   ]
 
   return (
